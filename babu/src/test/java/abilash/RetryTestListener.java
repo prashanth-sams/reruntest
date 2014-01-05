@@ -16,7 +16,7 @@ import java.util.Set;
 public class RetryTestListener extends TestListenerAdapter  {
     private static final  Logger logger = Logger.getLogger(RetryTestListener.class);
     private static int count = 1; 
-    private static final int maxCount = 7;
+    private static final int maxCount = 4;
 
     @Override
     public void onTestFailure(ITestResult tr) {   

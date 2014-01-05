@@ -10,10 +10,11 @@ import org.testng.ITestResult;
 public class RetryAnalyzer implements IRetryAnalyzer  { 
     private static final Logger logger = Logger.getLogger(RetryAnalyzer.class);
     int retryCount = 0;
-    int retryMaxCount = 6;
+    int retryMaxCount = 3;
     
     static {
-    PropertyConfigurator.configure("C:\\Users\\prashanth_sams\\workspacekepler\\babu\\log4j.properties");
+    //PropertyConfigurator.configure("C:\\Users\\prashanth_sams\\workspacekepler\\babu\\log4j.properties");
+	PropertyConfigurator.configure("log4j.properties");
     }
     
     @Override
